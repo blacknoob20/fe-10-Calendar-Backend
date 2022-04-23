@@ -45,6 +45,7 @@ app.use(express.json());
 
 // Apuntar al router de autenticacion
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/events', require('./routes/events'));
 
 // Escuchar peticiones
 app.listen(80, () => {
